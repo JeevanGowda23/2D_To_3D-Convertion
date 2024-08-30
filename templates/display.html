@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Display</title>
+</head>
+<body>
+<h1>Uploaded Image</h1>
+<img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Image">
+
+<h1>Generated 3D Model</h1>
+<img src="{{ url_for('uploaded_file', filename='3d_model.png') }}" alt="3D Model">
+
+<h2>3D Model Dimensions</h2>
+<p>X Range: {{ x_range }}</p>
+<p>Y Range: {{ y_range }}</p>
+<p>Z Range: {{ z_range }}</p>
+</body>
+</html>
